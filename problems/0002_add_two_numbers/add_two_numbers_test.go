@@ -35,12 +35,20 @@ func Test_addTwoNumbers(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{
-			name: "test",
+			name: "test1",
 			args: args{
 				l1: makeListNode([]int{2, 4, 3}),
 				l2: makeListNode([]int{5, 6, 4}),
 			},
 			want: makeListNode([]int{7, 0, 8}),
+		},
+		{
+			name: "test2",
+			args: args{
+				l1: makeListNode([]int{1, 8}),
+				l2: makeListNode([]int{0}),
+			},
+			want: makeListNode([]int{1, 8}),
 		},
 	}
 	for _, tt := range tests {
