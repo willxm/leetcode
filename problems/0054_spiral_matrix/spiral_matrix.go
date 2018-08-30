@@ -2,7 +2,10 @@ package problem
 
 func spiralOrder(matrix [][]int) []int {
 	h := len(matrix)
-	w := len(matrix[0])
+	w := 0
+	if h > 0 {
+		w = len(matrix[0])
+	}
 
 	res := make([]int, h*w)
 	if w == 0 || h == 0 {
