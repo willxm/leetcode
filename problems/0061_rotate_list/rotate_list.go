@@ -19,17 +19,12 @@ func rotateRight(head *ListNode, k int) *ListNode {
 	if k == 0 {
 		return head
 	}
-
 	pNode.Next = head
-	dummy := &ListNode{}
-	dummy.Next = head
-
-	prev := dummy
-
 	for i := 0; i < count-k; i++ {
-		prev = prev.Next
+		pNode = pNode.Next
 	}
-	pNode = prev.Next
-	prev.Next = nil
-	return pNode
+	nex := pNode.Next
+	// pNode = prev.Next
+	pNode.Next = nil
+	return nex
 }
