@@ -4,10 +4,10 @@ func uniquePaths(m int, n int) int {
 	sum := m + n
 	m = max(m, n)
 	n = sum - m
-	return C(m-1+n-1, n-1)
+	return c(m-1+n-1, n-1)
 }
 
-func C(m, n int) int {
+func c(m, n int) int {
 	x := 1
 	y := 1
 	for i := 0; i < n; i++ {
