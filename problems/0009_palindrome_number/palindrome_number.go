@@ -1,24 +1,22 @@
 package problem
 
-import (
-	"strconv"
-)
-
 func isPalindrome(x int) bool {
-	s := strconv.Itoa(x)
-	ps := reverseString(s)
-	if s == ps {
+	if x < 0 {
+		return false
+	} else if x == 0 {
 		return true
+	} else {
+		tmp := x
+		y := 0
+
+		for x != 0 {
+			y = y*10 + x%10
+			x = x / 10
+		}
+		if y == tmp {
+			return true
+		} else {
+			return false
+		}
 	}
-	return false
-}
-
-func reverseString(s string) string {
-	runes := []rune(s)
-
-	for from, to := 0, len(runes)-1; from < to; from, to = from+1, to-1 {
-		runes[from], runes[to] = runes[to], runes[from]
-	}
-
-	return string(runes)
 }
