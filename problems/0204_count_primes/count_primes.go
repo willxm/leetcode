@@ -1,7 +1,5 @@
 package problem
 
-import "runtime"
-
 func GenerateNatural() chan int {
 	ch := make(chan int)
 	go func() {
@@ -25,10 +23,12 @@ func PrimeFilter(in <-chan int, prime int) chan int {
 }
 
 func countPrimes(n int) int {
-	runtime.GOMAXPROCS(1)
+	if n < 3 {
+		return 0
+	}
 	var ret int
 	ch := GenerateNatural()
-	for i := 0; i < n; i++ {
+	for i := 0; i < n/2; i++ {
 		prime := <-ch
 		ch = PrimeFilter(ch, prime)
 		if prime < n {

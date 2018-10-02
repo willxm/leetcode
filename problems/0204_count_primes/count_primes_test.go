@@ -15,7 +15,7 @@ func Test_countPrimes(t *testing.T) {
 		{
 			name: "case1",
 			args: args{
-				n: 10,
+				n: 499979,
 			},
 			want: 4,
 		},
