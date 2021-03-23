@@ -19,6 +19,13 @@ func Test_maxArea(t *testing.T) {
 			},
 			want: 49,
 		},
+		{
+			name: "case2",
+			args: args{
+				height: []int{1, 2, 4, 3},
+			},
+			want: 4,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
