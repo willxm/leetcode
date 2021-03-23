@@ -37,10 +37,10 @@ func Test_removeNthFromEnd(t *testing.T) {
 		{
 			name: "case1",
 			args: args{
-				head: makeListNode([]int{1, 2, 3, 4, 5}),
-				n:    2,
+				head: makeListNode([]int{1, 2}),
+				n:    1,
 			},
-			want: makeListNode([]int{1, 2, 3, 5}),
+			want: makeListNode([]int{1}),
 		},
 	}
 	for _, tt := range tests {
