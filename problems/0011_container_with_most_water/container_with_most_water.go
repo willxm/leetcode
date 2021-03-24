@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func maxArea(height []int) int {
 	maxArea := 0

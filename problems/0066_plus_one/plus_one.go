@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func plusOne(digits []int) []int {
 	length := len(digits)

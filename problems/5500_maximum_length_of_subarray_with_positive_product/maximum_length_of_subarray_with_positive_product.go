@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func getMaxLen(nums []int) int {
 	// sort.Ints(nums)

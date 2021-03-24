@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func minCostConnectPoints(points [][]int) int {
 	l := len(points)

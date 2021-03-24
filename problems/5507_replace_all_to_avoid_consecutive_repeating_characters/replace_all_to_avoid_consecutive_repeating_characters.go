@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func modifyString(s string) string {
 	ss := []rune(s)

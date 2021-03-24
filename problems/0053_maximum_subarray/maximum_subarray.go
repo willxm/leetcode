@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func maxSubArray(nums []int) int {
 

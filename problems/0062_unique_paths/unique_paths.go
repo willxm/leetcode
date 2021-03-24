@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func uniquePaths(m int, n int) int {
 	sum := m + n

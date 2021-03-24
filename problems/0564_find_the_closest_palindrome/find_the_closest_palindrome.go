@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func nearestPalindromic(n string) string {
 	runes := []rune(n)

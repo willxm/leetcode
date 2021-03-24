@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func largestRectangleArea(heights []int) int {
 	var maxArea int

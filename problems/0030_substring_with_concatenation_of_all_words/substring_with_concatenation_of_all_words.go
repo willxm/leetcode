@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func findSubstring(s string, words []string) []int {
 	var res []int

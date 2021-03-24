@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func isPowerOfTwo(n int) bool {
 	if n < 0 {

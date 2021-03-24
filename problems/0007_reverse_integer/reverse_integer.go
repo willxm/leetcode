@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func reverse(x int) int {
 	if x < -2147483648 || x > 2147483647 {

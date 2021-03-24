@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func spiralOrder(matrix [][]int) []int {
 	h := len(matrix)

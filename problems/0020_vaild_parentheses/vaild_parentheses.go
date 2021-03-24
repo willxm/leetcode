@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func isValid(str string) bool {
 	s := new(stack)

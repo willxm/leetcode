@@ -1,4 +1,4 @@
-package problem
+package problems
 
 //A[k][n] = A[k-1][n-1] + A[k-1][n]
 func generate(numRows int) [][]int {

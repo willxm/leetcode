@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func interpret(command string) string {
 	var res string

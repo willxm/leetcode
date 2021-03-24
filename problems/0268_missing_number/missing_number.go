@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func missingNumber(nums []int) int {
 	x := 0

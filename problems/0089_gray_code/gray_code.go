@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func grayCode(n int) []int {
 	// l := int(math.Pow(float64(2), float64(n)))

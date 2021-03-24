@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func myPow(x float64, n int) float64 {
 	f := 0

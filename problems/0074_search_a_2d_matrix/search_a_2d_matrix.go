@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func searchMatrix(matrix [][]int, target int) bool {
 

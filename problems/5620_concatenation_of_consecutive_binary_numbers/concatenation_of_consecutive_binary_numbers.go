@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func concatenatedBinary(n int) int {
 	var res string

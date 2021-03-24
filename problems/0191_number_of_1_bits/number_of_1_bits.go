@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func hammingWeight(n int) int {
 	count := 0

@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func minCost(s string, cost []int) int {
 	ss := []rune(s)

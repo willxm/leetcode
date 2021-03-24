@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func containsPattern(arr []int, m int, k int) bool {
 	for i := 0; i < len(arr)-m; i++ {

@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func maxDepth(s string) int {
 	rs := []rune(s)

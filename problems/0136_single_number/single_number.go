@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func singleNumber(nums []int) int {
 	res := 0

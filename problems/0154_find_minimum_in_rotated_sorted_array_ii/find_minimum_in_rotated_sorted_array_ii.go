@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func findMin(nums []int) int {
 	size := len(nums)

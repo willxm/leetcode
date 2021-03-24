@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func GenerateNatural() chan int {
 	ch := make(chan int)

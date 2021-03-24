@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func removeElement(nums []int, val int) int {
 

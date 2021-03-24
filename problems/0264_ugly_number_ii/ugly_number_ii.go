@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func nthUglyNumber(n int) int {
 	var us = []int{2, 3, 4, 5}

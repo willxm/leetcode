@@ -1,4 +1,4 @@
-package problem
+package problems
 
 type TreeNode struct {
 	Val   int

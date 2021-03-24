@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func isUgly(num int) bool {
 

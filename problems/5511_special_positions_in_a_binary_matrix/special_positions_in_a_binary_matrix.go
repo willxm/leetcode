@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func numSpecial(mat [][]int) int {
 	r := len(mat)

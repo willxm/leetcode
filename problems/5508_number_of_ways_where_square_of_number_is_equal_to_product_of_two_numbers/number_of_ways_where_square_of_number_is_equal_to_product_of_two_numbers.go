@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func numTriplets(nums1 []int, nums2 []int) int {
 	var res int

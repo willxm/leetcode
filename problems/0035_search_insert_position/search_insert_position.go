@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func searchInsert(nums []int, target int) int {
 	i := 0

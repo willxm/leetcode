@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func findPeakElement(nums []int) int {
 	size := len(nums)

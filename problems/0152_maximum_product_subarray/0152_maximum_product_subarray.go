@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func maxProduct(nums []int) int {
 	l := len(nums)

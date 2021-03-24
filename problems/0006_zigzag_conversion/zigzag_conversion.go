@@ -1,4 +1,4 @@
-package problem
+package problems
 
 func convert(s string, numRows int) string {
 	if numRows == 1 {
