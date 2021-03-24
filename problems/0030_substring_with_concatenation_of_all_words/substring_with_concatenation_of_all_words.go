@@ -1,7 +1,5 @@
 package problem
 
-import "github.com/sqs/goreturns/returns"
-
 func findSubstring(s string, words []string) []int {
 	var res []int
 	var allIndex [][]int
@@ -14,7 +12,7 @@ func findSubstring(s string, words []string) []int {
 
 	for i := 0; i < len(allIndex); i++ {
 		for j := 0; j < len(allIndex[i]); j++ {
-			if abs(allIndex[i])
+			// if abs(allIndex[i])
 		}
 	}
 
@@ -47,8 +45,8 @@ func min(x, y int) int {
 	return y
 }
 
-func abs(x int)  int {
-	if x <0 {
+func abs(x int) int {
+	if x < 0 {
 		return -x
 	}
 	return x
