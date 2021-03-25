@@ -34,3 +34,5 @@ func sortString(s string) string {
 
 	return string(bytes)
 }
+
+//TODO: prime number
