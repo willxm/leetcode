@@ -24,7 +24,6 @@ func rotateRight(head *ListNode, k int) *ListNode {
 		pNode = pNode.Next
 	}
 	nex := pNode.Next
-	// pNode = prev.Next
 	pNode.Next = nil
 	return nex
 }
