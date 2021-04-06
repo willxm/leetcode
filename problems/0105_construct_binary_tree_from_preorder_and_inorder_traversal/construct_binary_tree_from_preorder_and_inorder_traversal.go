@@ -17,6 +17,7 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 	return root
 }
 
+//preorder第一个元素为root，在inorder里面找到root，在它之前的为左子树（长l1），之后为右子树（长l2）。preorder[1]到preorder[l1]为左子树,之后为右子树，分别递归。
 func constructCore(preOrder []int, startPre, endPre int, inOrder []int, startIn, endIn int) *TreeNode {
 
 	rootValue := preOrder[startPre]
