@@ -1,6 +1,6 @@
 module github.com/willxm/leetcode
 
-go 1.12
+go 1.19
 
 require (
 	github.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518
