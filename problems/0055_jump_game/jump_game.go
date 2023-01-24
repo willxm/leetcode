@@ -1,7 +1,6 @@
 package problems
 
 func canJump(nums []int) bool {
-
 	for i := len(nums) - 2; i >= 0; i-- {
 		if nums[i] != 0 {
 			continue
