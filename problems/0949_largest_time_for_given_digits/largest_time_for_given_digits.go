@@ -3,11 +3,8 @@ package main
 import "fmt"
 
 func largestTimeFromDigits(arr []int) string {
-	if arr[0] == 0 && arr[1] == 0 && arr[2] == 0 && arr[3] == 0 {
-		return "00:00"
-	}
 	ress := permute(arr)
-	maxT := 0
+	maxT := -1
 	for _, v := range ress {
 		h := v[0]*10 + v[1]
 		m := v[2]*10 + v[3]
@@ -15,7 +12,7 @@ func largestTimeFromDigits(arr []int) string {
 			maxT = max(maxT, h*100+m)
 		}
 	}
-	if maxT == 0 {
+	if maxT == -1 {
 		return ""
 	}
 	return fmt.Sprintf("%02d:%02d", maxT/100, maxT%100)
