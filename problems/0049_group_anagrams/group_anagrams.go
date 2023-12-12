@@ -1,38 +1,23 @@
 package problems
 
-import "sort"
-
 func groupAnagrams(strs []string) [][]string {
 	res := [][]string{}
-	record := make(map[string][]string)
+	record := make(map[[26]int8][]string)
 
 	for _, str := range strs {
-		temp := sortString(str)
+		temp := string2ints(str)
 		record[temp] = append(record[temp], str)
 	}
 	for _, v := range record {
-		sort.Strings(v)
 		res = append(res, v)
 	}
-
 	return res
 }
 
-func sortString(s string) string {
-	bytes := []byte(s)
-
-	temp := make([]int, len(bytes))
-	for i, b := range bytes {
-		temp[i] = int(b)
+func string2ints(s string) [26]int8 {
+	temp := [26]int8{}
+	for _, v := range s {
+		temp[v-'a'] += 1
 	}
-
-	sort.Ints(temp)
-
-	for i, v := range temp {
-		bytes[i] = byte(v)
-	}
-
-	return string(bytes)
+	return temp
 }
-
-//TODO: prime number
